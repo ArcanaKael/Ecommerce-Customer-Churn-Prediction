@@ -1,0 +1,21 @@
+Conceptual Problem
+
+1. Jelaskan latar belakang adanya bagging dan cara kerja bagging!
+- latar belakang Bagging: 
+Bagging (Bootstrap Aggregating) adalah teknik yang bertujuan meningkatkan kestabilan dan keakuratan model 
+dengan menggabungkan prediksi dari beberapa model yang dilatih menggunakan sampel acak dari data training.
+- cara kerja Bagging:
+membuat beberapa subset data acak dari data training, melatih model secara terpisah pada masing-masing subset, 
+kemudian menggabungkan prediksi dari semua model untuk menghasilkan prediksi akhir yang lebih baik.
+
+2. Jelaskan perbedaan cara kerja algoritma Random Forest dengan algoritma boosting yang Anda pilih!
+- Random Forest membangun banyak pohon secara bersamaan (paralel). Semua pohon dilatih secara independen dengan 
+subset data yang berbeda, lalu hasil prediksinya digabung. Jadi, Random Forest lebih fokus ke stabilitas dan mengurangi overfitting.
+- Gradient Boosting membangun pohon secara berurutan (serial). Setiap pohon baru dibuat untuk memperbaiki kesalahan 
+dari pohon sebelumnya. Karena itu, Gradient Boosting lebih fokus ke meningkatkan akurasi dengan cara belajar dari kesalahan, 
+tapi cenderung lebih rawan overfitting kalau tidak dikontrol dengan baik.
+
+3. Jelaskan apa yang dimaksud dengan Cross Validation!
+Cross Validation adalah metode untuk mengevaluasi kinerja model dengan cara membagi data menjadi beberapa bagian. 
+Model dilatih menggunakan sebagian data, lalu diuji pada bagian data yang belum pernah dilihat sebelumnya. 
+Cara ini membantu mendapatkan gambaran yang lebih akurat tentang kemampuan model dalam memprediksi data baru

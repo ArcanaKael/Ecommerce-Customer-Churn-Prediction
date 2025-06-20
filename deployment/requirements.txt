@@ -1,0 +1,9 @@
+streamlit
+seaborn
+pandas
+plotly
+pillow
+matplotlib
+numpy
+imbalanced-learn==0.12.4
+scikit-learn==1.6.1
